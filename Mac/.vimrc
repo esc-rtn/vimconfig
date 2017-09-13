@@ -1,3 +1,14 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree',
+Plug 'OmniSharp/omnisharp-vim',
+Plug 'tpope/vim-dispatch',
+Plug 'scrooloose/syntastic',
+Plug 'ctrlpvim/ctrlp.vim',
+Plug 'flazz/vim-colorschemes',
+
+call plug#end()
+
 set belloff=all
 colorscheme Molokai
 set background=dark
@@ -33,16 +44,6 @@ nnoremap   <Up>     <NOP>
 nnoremap   <Down>   <NOP>
 nnoremap   <Left>   <NOP>
 nnoremap   <Right>  <NOP>
-
-
-call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree',
-Plug 'OmniSharp/omnisharp-vim',
-Plug 'tpope/vim-dispatch',
-Plug 'scrooloose/syntastic',
-Plug 'ctrlpvim/ctrlp.vim',
-
-call plug#end()
 
 let javaScript_fold=1         " JavaScript
 let sh_fold_enabled=1         " sh
@@ -81,4 +82,3 @@ autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
        endif
    endif
  endfunction
-

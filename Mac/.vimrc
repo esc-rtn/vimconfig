@@ -32,6 +32,9 @@ noremap Wq wq
 noremap W w
 noremap Q q
 
+vnoremap > >gv
+vnoremap < <gv
+
 "vim mappings
 inoremap kj <Esc>
 "resistance is futile...
